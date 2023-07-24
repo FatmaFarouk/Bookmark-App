@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookmark</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+
+    <body>
+
+        <div class="container d-flex justify-content-center align-items-center">
+            <h1 class="py-2 position-relative">
+                <div class="layer"></div>
+                Bookmarker
+            </h1>
+        </div>
+
+        <div class="bookmark-body p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center container">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarhkName" class="pb-2 fw-bold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                </label>
+                <input type="text" placeholder="Bookmark Name" name="" id="bookmarkName" class="form-control mb-4">
+            </div>
+
+            <div class="site-url w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkUrl" class="pb-2 fw-bold">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input type="url" placeholder="Website URL" name="" id="bookmarkUrl" class="form-control">
+            </div>
+
+            <button class="btn-submit px-5" id="submitBtn">Submit</button>
+        </div>
+
+        <table class="table mt-4 text-center bg-light container">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableContent">
+
+            </tbody>
+        </table>
+
+        <script src="main.js"></script>
+    </body>
+</html>
